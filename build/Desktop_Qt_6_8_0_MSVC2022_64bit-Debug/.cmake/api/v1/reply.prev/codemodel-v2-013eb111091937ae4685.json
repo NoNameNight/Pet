@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-c3a658907506bce04a0a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Pet",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Pet::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Pet-Debug-97b7ff7ffe7e8c2ee852.json",
+					"name" : "Pet",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Pet_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Pet_autogen-Debug-f5cebc660578a87553f7.json",
+					"name" : "Pet_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Pet_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Pet_autogen_timestamp_deps-Debug-6e0551b8df6feeb1e6b0.json",
+					"name" : "Pet_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/QtProject/Pet/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug",
+		"source" : "E:/QtProject/Pet"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

@@ -10,5 +10,7 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
+protected:
+    void paintEvent(QPaintEvent* event) override;
 };
 #endif // WIDGET_H
