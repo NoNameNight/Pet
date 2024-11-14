@@ -2,6 +2,7 @@
 E:/QtProject/Pet/Util.h
 E:/QtProject/Pet/widget.h
  mmc:Q_OBJECT
+ mdp:D:/QT/6.8.0/msvc2022_64/include/QtCore/QString
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtCore/q20functional.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtCore/q20iterator.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtCore/q20memory.h
@@ -122,6 +123,8 @@ E:/QtProject/Pet/widget.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtCore/qversiontagging.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtCore/qxptype_traits.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtCore/qyieldcpu.h
+ mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/QPainter
+ mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/QPixmap
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qaction.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qbitmap.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qbrush.h
@@ -134,13 +137,16 @@ E:/QtProject/Pet/widget.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qimage.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qkeysequence.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qpaintdevice.h
+ mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qpainter.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qpalette.h
+ mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qpen.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qpixelformat.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qpixmap.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qpolygon.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qregion.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qrgb.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qrgba64.h
+ mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qtextoption.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qtgui-config.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qtguiexports.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtGui/qtguiglobal.h
@@ -153,9 +159,19 @@ E:/QtProject/Pet/widget.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtWidgets/qtwidgetsexports.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:D:/QT/6.8.0/msvc2022_64/include/QtWidgets/qwidget.h
+ mdp:E:/QtProject/Pet/Animation.h
+ mdp:E:/QtProject/Pet/Atlas.h
+ mdp:E:/QtProject/Pet/Graphics.h
+ mdp:E:/QtProject/Pet/Timer.h
+ mdp:E:/QtProject/Pet/Util.h
+ mdp:E:/QtProject/Pet/Vector2.h
  mdp:E:/QtProject/Pet/widget.h
 E:/QtProject/Pet/ResourcesManager.h
 E:/QtProject/Pet/main.cpp
 E:/QtProject/Pet/widget.cpp
 E:/QtProject/Pet/Atlas.h
 E:/QtProject/Pet/ResourcesManager.cpp
+E:/QtProject/Pet/Animation.h
+E:/QtProject/Pet/Graphics.h
+E:/QtProject/Pet/Timer.h
+E:/QtProject/Pet/Vector2.h

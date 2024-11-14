@@ -29,6 +29,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ResourcesManager.h ResourcesManager.cpp
         Atlas.h
         Util.h
+        Vector2.h
+        Timer.h
+        Animation.h
+        Graphics.h
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Pet APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

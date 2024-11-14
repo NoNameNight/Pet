@@ -328,14 +328,33 @@
 	"DEP_FILE_RULE_NAME" : "Pet_autogen/timestamp",
 	"HEADERS" : 
 	[
+		[
+			"E:/QtProject/Pet/Animation.h",
+			"MU",
+			"EWIEGA46WW/moc_Animation.cpp",
+			null
+		],
 		[ "E:/QtProject/Pet/Atlas.h", "MU", "EWIEGA46WW/moc_Atlas.cpp", null ],
+		[
+			"E:/QtProject/Pet/Graphics.h",
+			"MU",
+			"EWIEGA46WW/moc_Graphics.cpp",
+			null
+		],
 		[
 			"E:/QtProject/Pet/ResourcesManager.h",
 			"MU",
 			"EWIEGA46WW/moc_ResourcesManager.cpp",
 			null
 		],
+		[ "E:/QtProject/Pet/Timer.h", "MU", "EWIEGA46WW/moc_Timer.cpp", null ],
 		[ "E:/QtProject/Pet/Util.h", "MU", "EWIEGA46WW/moc_Util.cpp", null ],
+		[
+			"E:/QtProject/Pet/Vector2.h",
+			"MU",
+			"EWIEGA46WW/moc_Vector2.cpp",
+			null
+		],
 		[ "E:/QtProject/Pet/widget.h", "MU", "EWIEGA46WW/moc_widget.cpp", null ]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],

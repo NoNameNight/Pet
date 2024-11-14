@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 72,
+				"line" : 76,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 55,
+				"line" : 59,
 				"parent" : 0
 			},
 			{
@@ -376,11 +376,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "Pet_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "Pet_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "Pet_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Pet::@6890427a1f51a3e7e1df",
@@ -498,7 +498,11 @@
 				3,
 				5,
 				7,
-				8
+				8,
+				9,
+				10,
+				11,
+				12
 			]
 		},
 		{
@@ -506,14 +510,14 @@
 			"sourceIndexes" : 
 			[
 				4,
-				9
+				13
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				10
+				14
 			]
 		}
 	],
@@ -567,6 +571,26 @@
 		{
 			"backtrace" : 4,
 			"path" : "Util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "Vector2.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "Timer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "Animation.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "Graphics.h",
 			"sourceGroupIndex" : 1
 		},
 		{

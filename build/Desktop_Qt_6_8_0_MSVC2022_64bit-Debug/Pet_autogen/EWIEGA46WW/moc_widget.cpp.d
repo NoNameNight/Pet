@@ -1,4 +1,5 @@
 E:/QtProject/Pet/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Pet_autogen/EWIEGA46WW/moc_widget.cpp: E:/QtProject/Pet/widget.h \
+  D:/QT/6.8.0/msvc2022_64/include/QtCore/QString \
   D:/QT/6.8.0/msvc2022_64/include/QtCore/q20functional.h \
   D:/QT/6.8.0/msvc2022_64/include/QtCore/q20iterator.h \
   D:/QT/6.8.0/msvc2022_64/include/QtCore/q20memory.h \
@@ -119,6 +120,8 @@ E:/QtProject/Pet/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Pet_autogen/EWIEGA4
   D:/QT/6.8.0/msvc2022_64/include/QtCore/qversiontagging.h \
   D:/QT/6.8.0/msvc2022_64/include/QtCore/qxptype_traits.h \
   D:/QT/6.8.0/msvc2022_64/include/QtCore/qyieldcpu.h \
+  D:/QT/6.8.0/msvc2022_64/include/QtGui/QPainter \
+  D:/QT/6.8.0/msvc2022_64/include/QtGui/QPixmap \
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qaction.h \
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qbitmap.h \
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qbrush.h \
@@ -131,13 +134,16 @@ E:/QtProject/Pet/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Pet_autogen/EWIEGA4
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qimage.h \
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qkeysequence.h \
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qpaintdevice.h \
+  D:/QT/6.8.0/msvc2022_64/include/QtGui/qpainter.h \
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qpalette.h \
+  D:/QT/6.8.0/msvc2022_64/include/QtGui/qpen.h \
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qpixelformat.h \
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qpixmap.h \
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qpolygon.h \
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qregion.h \
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qrgb.h \
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qrgba64.h \
+  D:/QT/6.8.0/msvc2022_64/include/QtGui/qtextoption.h \
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qtgui-config.h \
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qtguiexports.h \
   D:/QT/6.8.0/msvc2022_64/include/QtGui/qtguiglobal.h \
@@ -149,4 +155,10 @@ E:/QtProject/Pet/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Pet_autogen/EWIEGA4
   D:/QT/6.8.0/msvc2022_64/include/QtWidgets/qtwidgets-config.h \
   D:/QT/6.8.0/msvc2022_64/include/QtWidgets/qtwidgetsexports.h \
   D:/QT/6.8.0/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h \
-  D:/QT/6.8.0/msvc2022_64/include/QtWidgets/qwidget.h
+  D:/QT/6.8.0/msvc2022_64/include/QtWidgets/qwidget.h \
+  E:/QtProject/Pet/Animation.h \
+  E:/QtProject/Pet/Atlas.h \
+  E:/QtProject/Pet/Graphics.h \
+  E:/QtProject/Pet/Timer.h \
+  E:/QtProject/Pet/Util.h \
+  E:/QtProject/Pet/Vector2.h
