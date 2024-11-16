@@ -3,6 +3,8 @@
 #include "ResourcesManager.h"
 #include "CharacterManager.h"
 
+#include <QSharedMemory>
+
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
@@ -78,6 +80,39 @@ void initMenu(QMenu& menu)
     );
 }
 
+class NNNSharedMemory
+{
+public:
+    NNNSharedMemory(const char* name)
+        : m_sharedMemory(name)
+    {
+        if(m_sharedMemory.attach())
+        {
+            QMessageBox::warning(nullptr, "Error", "An instance of the application is already running.");
+        }
+        else
+        {
+            m_sharedMemory.create(1); // 创建1byte大小的共享内存段
+            m_have_create = true;
+        }
+    }
+    ~NNNSharedMemory()
+    {
+        if(m_have_create)
+        {
+            m_sharedMemory.detach();
+        }
+    }
+
+    bool canUse()
+    {
+        return m_have_create;
+    }
+
+private:
+    QSharedMemory m_sharedMemory;
+    bool m_have_create = false;
+};
 
 int main(int argc, char *argv[])
 {
@@ -91,6 +126,12 @@ int main(int argc, char *argv[])
             a.installTranslator(&translator);
             break;
         }
+    }
+
+    NNNSharedMemory sharedMemory("20241116CreatePet");  // 设置绑定的共享内存段的key值
+    if(!sharedMemory.canUse())
+    {
+        return -1;
     }
 
     try
