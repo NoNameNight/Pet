@@ -7,7 +7,6 @@
 
 #include <string>
 #include <unordered_map>
-#include <QDebug>
 
 class Character
 {
@@ -40,7 +39,6 @@ public:
     }
     bool isOnFloor() const
     {
-        qDebug() << m_position.x << " " << m_position.y;
         Config* config = Config::instance();
         return m_position.y - config->character_foot_bottom >= FLOOR_Y;
     }

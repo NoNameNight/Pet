@@ -66,8 +66,6 @@ void Widget::mouseReleaseEvent(QMouseEvent *ev)
         Character* pet = CharacterManager::instance()->getPet();
         steady_clock::time_point now_time = steady_clock::now();
         duration<float, std::milli> delta = duration<float, std::milli>(now_time - m_last_mouse_press_time);
-        qDebug() << delta.count() << "\n";
-        // CharacterManager::instance()->getPet()->setGravityEnabled(true);
         if(!m_is_mouse_press_move_first)
         {
             pet->switchState("relax");

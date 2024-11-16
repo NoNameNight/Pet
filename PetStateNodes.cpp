@@ -338,7 +338,6 @@ PetRelaxState::PetRelaxState()
         [this]() {
             Pet* pet = static_cast<Pet*>(CharacterManager::instance()->getPet());
             int rand_num_in = range_random(0, ALL_PROBABILITY);
-            qDebug() << rand_num_in;
             if(rand_num_in <= MOVE_PROBABILITY)
             {
                 pet->switchState("move");
