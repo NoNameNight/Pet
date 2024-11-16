@@ -162,6 +162,8 @@ E:/QtProject/Pet/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Pet_autogen/EWIEGA4
   E:/QtProject/Pet/Character.h \
   E:/QtProject/Pet/Graphics.h \
   E:/QtProject/Pet/Pet.h \
+  E:/QtProject/Pet/StateMachine.h \
+  E:/QtProject/Pet/StateNode.h \
   E:/QtProject/Pet/Timer.h \
   E:/QtProject/Pet/Util.h \
   E:/QtProject/Pet/Vector2.h

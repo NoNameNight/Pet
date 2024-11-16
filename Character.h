@@ -3,7 +3,7 @@
 
 #include "Vector2.h"
 #include "Animation.h"
-// #include "StateMachine.h"
+#include "StateMachine.h"
 
 #include <string>
 #include <unordered_map>
@@ -78,7 +78,7 @@ protected:
     Vector2 m_velocity;													//角色速度
     float m_logic_height = 0;											//角色逻辑高度
     bool m_is_facing_left = false;										//角色是否向左
-    // StateMachine m_state_machine;										//角色逻辑状态机
+    StateMachine m_state_machine;										//角色逻辑状态机
     bool m_enable_gravity = true;										//启动重力模拟
     AnimationGroup* m_current_animation = nullptr;						//当前角色动画
     std::unordered_map<std::string, AnimationGroup> m_animation_pool;	//角色动画池

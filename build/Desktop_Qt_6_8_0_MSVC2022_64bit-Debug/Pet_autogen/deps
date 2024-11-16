@@ -393,8 +393,13 @@ Pet_autogen/timestamp: \
 	E:/QtProject/Pet/Graphics.h \
 	E:/QtProject/Pet/Pet.cpp \
 	E:/QtProject/Pet/Pet.h \
+	E:/QtProject/Pet/PetStateNodes.cpp \
+	E:/QtProject/Pet/PetStateNodes.h \
 	E:/QtProject/Pet/ResourcesManager.cpp \
 	E:/QtProject/Pet/ResourcesManager.h \
+	E:/QtProject/Pet/StateMachine.cpp \
+	E:/QtProject/Pet/StateMachine.h \
+	E:/QtProject/Pet/StateNode.h \
 	E:/QtProject/Pet/Timer.h \
 	E:/QtProject/Pet/Util.h \
 	E:/QtProject/Pet/Vector2.h \

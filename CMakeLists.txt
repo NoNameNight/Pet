@@ -36,6 +36,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Character.h Character.cpp
         Pet.h Pet.cpp
         CharacterManager.h CharacterManager.cpp
+        StateNode.h
+        StateMachine.h StateMachine.cpp
+        PetStateNodes.h PetStateNodes.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Pet APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

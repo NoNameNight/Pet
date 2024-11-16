@@ -7,7 +7,7 @@ Character::Character() {}
 
 void Character::onUpdate(float delta)
 {
-    // m_state_machine.onUpdate(delta);
+    m_state_machine.onUpdate(delta);
 
     float left = 0, right = 0, bottom = 0;
     QList<QScreen *> screenList = QGuiApplication::screens();
@@ -53,7 +53,7 @@ void Character::onRender()
 
 void Character::switchState(const std::string &id)
 {
-    // m_state_machine.switchTo(id);
+    m_state_machine.switchTo(id);
 }
 
 void Character::setAnimation(const std::string &id)

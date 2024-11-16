@@ -355,9 +355,27 @@
 		],
 		[ "E:/QtProject/Pet/Pet.h", "MU", "EWIEGA46WW/moc_Pet.cpp", null ],
 		[
+			"E:/QtProject/Pet/PetStateNodes.h",
+			"MU",
+			"EWIEGA46WW/moc_PetStateNodes.cpp",
+			null
+		],
+		[
 			"E:/QtProject/Pet/ResourcesManager.h",
 			"MU",
 			"EWIEGA46WW/moc_ResourcesManager.cpp",
+			null
+		],
+		[
+			"E:/QtProject/Pet/StateMachine.h",
+			"MU",
+			"EWIEGA46WW/moc_StateMachine.cpp",
+			null
+		],
+		[
+			"E:/QtProject/Pet/StateNode.h",
+			"MU",
+			"EWIEGA46WW/moc_StateNode.cpp",
 			null
 		],
 		[ "E:/QtProject/Pet/Timer.h", "MU", "EWIEGA46WW/moc_Timer.cpp", null ],
@@ -428,7 +446,9 @@
 		[ "E:/QtProject/Pet/Character.cpp", "MU", null ],
 		[ "E:/QtProject/Pet/CharacterManager.cpp", "MU", null ],
 		[ "E:/QtProject/Pet/Pet.cpp", "MU", null ],
+		[ "E:/QtProject/Pet/PetStateNodes.cpp", "MU", null ],
 		[ "E:/QtProject/Pet/ResourcesManager.cpp", "MU", null ],
+		[ "E:/QtProject/Pet/StateMachine.cpp", "MU", null ],
 		[ "E:/QtProject/Pet/main.cpp", "MU", null ],
 		[ "E:/QtProject/Pet/widget.cpp", "MU", null ]
 	],

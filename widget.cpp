@@ -14,8 +14,8 @@ Widget::Widget(QWidget *parent)
 
     // m_pet.setAnimation("skill_2_loop");
     // m_pet.setGravityEnabled(false);
-    CharacterManager::instance()->getPet()->setAnimation("skill_2_loop");
-    CharacterManager::instance()->getPet()->setGravityEnabled(false);
+    // CharacterManager::instance()->getPet()->setAnimation("skill_2_loop");
+    // CharacterManager::instance()->getPet()->setGravityEnabled(false);
 
     // 设置帧率为60 FPS
     int fps = 60;

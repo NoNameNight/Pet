@@ -1,6 +1,6 @@
 #include "Pet.h"
 #include "ResourcesManager.h"
-// #include "PetStateNodes.h"
+#include "PetStateNodes.h"
 
 #include <QScreen>
 
@@ -182,22 +182,22 @@ Pet::Pet()
         }
     }
 
-    // {
-    //     m_state_machine.registerState("start", new PetStartState());
-    //     m_state_machine.registerState("interact", new PetInteractState());
-    //     m_state_machine.registerState("carry", new PetCarryState());
-    //     m_state_machine.registerState("fall", new PetFallState());
-    //     m_state_machine.registerState("idle", new PetIdleState());
-    //     m_state_machine.registerState("move", new PetMoveState());
-    //     m_state_machine.registerState("sit", new PetSitState());
-    //     m_state_machine.registerState("sleep", new PetSleepState());
-    //     m_state_machine.registerState("relax", new PetRelaxState());
-    //     m_state_machine.registerState("skill_2_begin", new PetSkill2BeginState());
-    //     m_state_machine.registerState("skill_2_loop", new PetSkill2LoopState());
+    {
+        m_state_machine.registerState("start", new PetStartState());
+        m_state_machine.registerState("interact", new PetInteractState());
+        m_state_machine.registerState("carry", new PetCarryState());
+        m_state_machine.registerState("fall", new PetFallState());
+        m_state_machine.registerState("idle", new PetIdleState());
+        m_state_machine.registerState("move", new PetMoveState());
+        m_state_machine.registerState("sit", new PetSitState());
+        m_state_machine.registerState("sleep", new PetSleepState());
+        m_state_machine.registerState("relax", new PetRelaxState());
+        m_state_machine.registerState("skill_2_begin", new PetSkill2BeginState());
+        m_state_machine.registerState("skill_2_loop", new PetSkill2LoopState());
 
-    //     m_state_machine.setEnter("start");
+        m_state_machine.setEnter("start");
 
-    // }
+    }
     m_is_facing_left = true;
 }
 
