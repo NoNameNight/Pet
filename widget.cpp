@@ -3,29 +3,34 @@
 
 #include <QTimer>
 #include "CharacterManager.h"
+#include "ResourcesManager.h"
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
 {
-    // m_animation.setLoop("true");
-    // m_animation.setInterval(0.03f);
-    // m_animation.setAnchorMode(Animation::AnchorMode::BottomCentered);
-    // m_animation.addFrame(ResourcesManager::instance()->findAtlas("skadi_skill_2_loop_right"));
+    setWindowFlags(Qt::Tool);
+    this->setContextMenuPolicy(Qt::DefaultContextMenu);
 
-    // m_pet.setAnimation("skill_2_loop");
-    // m_pet.setGravityEnabled(false);
-    // CharacterManager::instance()->getPet()->setAnimation("skill_2_loop");
-    // CharacterManager::instance()->getPet()->setGravityEnabled(false);
+    this->setWindowFlag(Qt::FramelessWindowHint);
+    this->setAttribute(Qt::WA_TranslucentBackground);
+    Qt::WindowFlags m_flags = this->windowFlags();
+    this->setWindowFlags(m_flags | Qt::WindowStaysOnTopHint);
+    IMAGE *rtmp = ResourcesManager::instance()->findImage("pic");
+    this->resize(rtmp->width(), rtmp->height());
 
     // 设置帧率为60 FPS
     int fps = 60;
-    // m_frame_duration = std::chrono::nanoseconds(1000000000 / fps);
     std::chrono::milliseconds frame_duration(1000 / fps);
     m_last_tick = std::chrono::steady_clock::now();
     // 开始游戏循环
     QTimer* timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, &Widget::updateGame);
     timer->start(frame_duration);  // approximately 60 FPS
+}
+
+void Widget::setMenu(QMenu* menu)
+{
+    m_menu = menu;
 }
 
 Widget::~Widget() {}
@@ -35,11 +40,64 @@ void Widget::paintEvent(QPaintEvent *event)
     QPainter& painter = Graphics::instance()->getPainter();
     painter.begin(this);
 
-    // m_animation.onRender();
-    // m_pet.onRender();
     CharacterManager::instance()->getPet()->onRender();
 
     painter.end();
+}
+
+void Widget::mousePressEvent(QMouseEvent *ev)
+{
+    //代表鼠标左键按下
+    if(ev->button() & Qt::LeftButton)
+    {
+        m_last_mouse_press_pos = ev->pos();
+        m_last_mouse_press_time = std::chrono::steady_clock::now();
+        m_is_mouse_press_move_first = true;
+        // CharacterManager::instance()->getPet()->setGravityEnabled(false);
+        // CharacterManager::instance()->getPet()->setVelocity(Vector2(0,0));
+    }
+}
+
+void Widget::mouseReleaseEvent(QMouseEvent *ev)
+{
+    using namespace std::chrono;
+    if((ev->button() & Qt::LeftButton))
+    {
+        Character* pet = CharacterManager::instance()->getPet();
+        steady_clock::time_point now_time = steady_clock::now();
+        duration<float, std::milli> delta = duration<float, std::milli>(now_time - m_last_mouse_press_time);
+        qDebug() << delta.count() << "\n";
+        // CharacterManager::instance()->getPet()->setGravityEnabled(true);
+        if(!m_is_mouse_press_move_first)
+        {
+            pet->switchState("relax");
+        }
+        else if(delta.count() < 200.f)
+        {
+            pet->switchState("interact");
+        }
+    }
+    else if(ev->button() & Qt::RightButton)
+    {
+        // QMenu* menu;
+    }
+}
+
+void Widget::mouseMoveEvent(QMouseEvent *ev)
+{
+    if(ev->buttons() & Qt::MouseButton::LeftButton)
+    {
+        Character* pet = CharacterManager::instance()->getPet();
+        if(m_is_mouse_press_move_first)
+        {
+            pet->switchState("carry");
+            m_is_mouse_press_move_first = false;
+        }
+        // w->move(e->globalPosition().toPoint()-m_pos);
+        QPoint pos = ev->globalPosition().toPoint() - m_last_mouse_press_pos;
+        Vector2 postion(pos.x() + this->size().width() / 2, pos.y() + this->size().height());
+        pet->setPosition(postion);
+    }
 }
 
 void Widget::updateGame()
@@ -54,6 +112,18 @@ void Widget::updateGame()
     // m_pet.onUpdate(delta.count());
     CharacterManager::instance()->getPet()->onUpdate(delta.count());
 
+    Vector2 postion = CharacterManager::instance()->getPet()->getPosition();
+    this->move(postion.x - this->size().width() / 2, postion.y - this->size().height());
+
+
     this->update();
     m_last_tick = frameStart;
+}
+
+void Widget::contextMenuEvent(QContextMenuEvent *event)
+{
+    if(m_menu != nullptr)
+    {
+        m_menu->exec(QCursor::pos());
+    }
 }

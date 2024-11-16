@@ -62,7 +62,6 @@ void ResourcesManager::load()
     for (const ImageResInfo& info : image_info_list)
     {
         IMAGE* image = new IMAGE();
-        // loadimage(image, info.path);
         image->load(info.path);
         if (!checkImageValid(image)) { throw info.path; }
         *image = image->scaled(300, 300, Qt::KeepAspectRatio, Qt::SmoothTransformation);

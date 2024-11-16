@@ -2,9 +2,11 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QMouseEvent>
+#include <QMenu>
 
 // #include "Animation.h"
-#include "Pet.h"
+// #include "Pet.h"
 
 class Widget : public QWidget
 {
@@ -12,15 +14,24 @@ class Widget : public QWidget
 
 public:
     Widget(QWidget *parent = nullptr);
+    void setMenu(QMenu* menu);
     ~Widget();
 protected:
     void paintEvent(QPaintEvent* event) override;
+
+    void mousePressEvent(QMouseEvent* ev) override;
+    void mouseReleaseEvent(QMouseEvent* ev) override;
+    void mouseMoveEvent(QMouseEvent* ev) override;
+
+    void contextMenuEvent(QContextMenuEvent *event) override;
 private:
     void updateGame();
 private:
-    std::chrono::steady_clock::time_point m_last_tick;
+    QMenu* m_menu;
 
-    // Animation m_animation;
-    // Pet m_pet;
+    std::chrono::steady_clock::time_point m_last_tick;
+    bool m_is_mouse_press_move_first = true;
+    QPoint m_last_mouse_press_pos = {0, 0};
+    std::chrono::steady_clock::time_point m_last_mouse_press_time;
 };
 #endif // WIDGET_H

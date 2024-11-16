@@ -1,12 +1,83 @@
 #include "widget.h"
 
 #include "ResourcesManager.h"
+#include "CharacterManager.h"
 
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
 
 #include <QMessageBox>
+#include <QSystemTrayIcon>
+#include <QIcon>
+
+void initMenu(QMenu& menu)
+{
+    QAction* move_act = menu.addAction("move");
+    QObject::connect(move_act, &QAction::triggered,
+        [](){
+            Character* pet = CharacterManager::instance()->getPet();
+            pet->switchState("move");
+        }
+    );
+
+    QAction* skill2_act = menu.addAction("skill2");
+    QObject::connect(skill2_act, &QAction::triggered,
+        [](){
+            Character* pet = CharacterManager::instance()->getPet();
+            pet->switchState("skill_2_begin");
+        }
+    );
+
+    QAction* sit_act = menu.addAction("sit");
+    QObject::connect(sit_act, &QAction::triggered,
+        [](){
+            Character* pet = CharacterManager::instance()->getPet();
+            pet->switchState("sit");
+        }
+    );
+
+    QAction* sleep_act = menu.addAction("sleep");
+    QObject::connect(sleep_act, &QAction::triggered,
+        [](){
+            Character* pet = CharacterManager::instance()->getPet();
+            pet->switchState("sleep");
+        }
+    );
+
+    QAction* relax_act = menu.addAction("relax");
+    QObject::connect(relax_act, &QAction::triggered,
+        [](){
+            Character* pet = CharacterManager::instance()->getPet();
+            pet->switchState("relax");
+        }
+    );
+
+    QAction* idle_act = menu.addAction("idle");
+    QObject::connect(idle_act, &QAction::triggered,
+        [](){
+            Character* pet = CharacterManager::instance()->getPet();
+            pet->switchState("idle");
+        }
+    );
+
+
+    QAction* interact_act = menu.addAction("interact");
+    QObject::connect(interact_act, &QAction::triggered,
+        [](){
+            Character* pet = CharacterManager::instance()->getPet();
+            pet->switchState("interact");
+        }
+    );
+
+    QAction* close_act = menu.addAction("close");
+    QObject::connect(close_act, &QAction::triggered,
+        [](){
+            QApplication::quit();
+        }
+    );
+}
+
 
 int main(int argc, char *argv[])
 {
@@ -39,8 +110,17 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-
     Widget w;
+
+    QMenu menu;
+    initMenu(menu);
+    w.setMenu(&menu);
+
+    QIcon icon = QIcon("resources/ico.ico");
+    QSystemTrayIcon sysTray(icon, &w);
+    sysTray.setContextMenu(&menu);
+
+    sysTray.show();
     w.show();
     return a.exec();
 }
