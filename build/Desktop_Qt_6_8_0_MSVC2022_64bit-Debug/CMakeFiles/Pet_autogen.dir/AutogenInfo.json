@@ -342,6 +342,12 @@
 			null
 		],
 		[
+			"E:/QtProject/Pet/CharacterManager.h",
+			"MU",
+			"EWIEGA46WW/moc_CharacterManager.cpp",
+			null
+		],
+		[
 			"E:/QtProject/Pet/Graphics.h",
 			"MU",
 			"EWIEGA46WW/moc_Graphics.cpp",
@@ -420,6 +426,7 @@
 	"SOURCES" : 
 	[
 		[ "E:/QtProject/Pet/Character.cpp", "MU", null ],
+		[ "E:/QtProject/Pet/CharacterManager.cpp", "MU", null ],
 		[ "E:/QtProject/Pet/Pet.cpp", "MU", null ],
 		[ "E:/QtProject/Pet/ResourcesManager.cpp", "MU", null ],
 		[ "E:/QtProject/Pet/main.cpp", "MU", null ],

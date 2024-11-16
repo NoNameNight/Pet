@@ -43,6 +43,7 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "E:/QtProject/Pet/*.cpp")
 set(OLD_GLOB
   "E:/QtProject/Pet/Character.cpp"
+  "E:/QtProject/Pet/CharacterManager.cpp"
   "E:/QtProject/Pet/Pet.cpp"
   "E:/QtProject/Pet/ResourcesManager.cpp"
   "E:/QtProject/Pet/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
@@ -72,6 +73,7 @@ set(OLD_GLOB
   "E:/QtProject/Pet/Animation.h"
   "E:/QtProject/Pet/Atlas.h"
   "E:/QtProject/Pet/Character.h"
+  "E:/QtProject/Pet/CharacterManager.h"
   "E:/QtProject/Pet/Graphics.h"
   "E:/QtProject/Pet/Pet.h"
   "E:/QtProject/Pet/ResourcesManager.h"

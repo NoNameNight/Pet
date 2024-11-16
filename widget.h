@@ -21,6 +21,6 @@ private:
     std::chrono::steady_clock::time_point m_last_tick;
 
     // Animation m_animation;
-    Pet m_pet;
+    // Pet m_pet;
 };
 #endif // WIDGET_H

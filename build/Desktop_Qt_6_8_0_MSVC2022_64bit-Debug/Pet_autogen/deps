@@ -388,6 +388,8 @@ Pet_autogen/timestamp: \
 	E:/QtProject/Pet/CMakeLists.txt \
 	E:/QtProject/Pet/Character.cpp \
 	E:/QtProject/Pet/Character.h \
+	E:/QtProject/Pet/CharacterManager.cpp \
+	E:/QtProject/Pet/CharacterManager.h \
 	E:/QtProject/Pet/Graphics.h \
 	E:/QtProject/Pet/Pet.cpp \
 	E:/QtProject/Pet/Pet.h \
