@@ -1,4 +1,5 @@
 Pet_autogen/timestamp: \
+	D:/QT/6.8.0/msvc2022_64/include/QtCore/QDebug \
 	D:/QT/6.8.0/msvc2022_64/include/QtCore/QString \
 	D:/QT/6.8.0/msvc2022_64/include/QtCore/q20functional.h \
 	D:/QT/6.8.0/msvc2022_64/include/QtCore/q20iterator.h \
@@ -385,7 +386,11 @@ Pet_autogen/timestamp: \
 	E:/QtProject/Pet/Animation.h \
 	E:/QtProject/Pet/Atlas.h \
 	E:/QtProject/Pet/CMakeLists.txt \
+	E:/QtProject/Pet/Character.cpp \
+	E:/QtProject/Pet/Character.h \
 	E:/QtProject/Pet/Graphics.h \
+	E:/QtProject/Pet/Pet.cpp \
+	E:/QtProject/Pet/Pet.h \
 	E:/QtProject/Pet/ResourcesManager.cpp \
 	E:/QtProject/Pet/ResourcesManager.h \
 	E:/QtProject/Pet/Timer.h \

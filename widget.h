@@ -3,7 +3,8 @@
 
 #include <QWidget>
 
-#include "Animation.h"
+// #include "Animation.h"
+#include "Pet.h"
 
 class Widget : public QWidget
 {
@@ -19,6 +20,7 @@ private:
 private:
     std::chrono::steady_clock::time_point m_last_tick;
 
-    Animation m_animation;
+    // Animation m_animation;
+    Pet m_pet;
 };
 #endif // WIDGET_H

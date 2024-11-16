@@ -336,11 +336,18 @@
 		],
 		[ "E:/QtProject/Pet/Atlas.h", "MU", "EWIEGA46WW/moc_Atlas.cpp", null ],
 		[
+			"E:/QtProject/Pet/Character.h",
+			"MU",
+			"EWIEGA46WW/moc_Character.cpp",
+			null
+		],
+		[
 			"E:/QtProject/Pet/Graphics.h",
 			"MU",
 			"EWIEGA46WW/moc_Graphics.cpp",
 			null
 		],
+		[ "E:/QtProject/Pet/Pet.h", "MU", "EWIEGA46WW/moc_Pet.cpp", null ],
 		[
 			"E:/QtProject/Pet/ResourcesManager.h",
 			"MU",
@@ -412,6 +419,8 @@
 	"SETTINGS_FILE" : "E:/QtProject/Pet/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/CMakeFiles/Pet_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "E:/QtProject/Pet/Character.cpp", "MU", null ],
+		[ "E:/QtProject/Pet/Pet.cpp", "MU", null ],
 		[ "E:/QtProject/Pet/ResourcesManager.cpp", "MU", null ],
 		[ "E:/QtProject/Pet/main.cpp", "MU", null ],
 		[ "E:/QtProject/Pet/widget.cpp", "MU", null ]

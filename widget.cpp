@@ -7,22 +7,13 @@
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
 {
-    try
-    {
-        ResourcesManager::instance()->load();
-    }
-    catch (const QString id)
-    {
-        char err_msg[512] = { 0 };
-        sprintf_s(err_msg, ("无法加载: %s"), id.toStdString().c_str());
-        qDebug() << err_msg;
-        // return -1;
-    }
+    // m_animation.setLoop("true");
+    // m_animation.setInterval(0.03f);
+    // m_animation.setAnchorMode(Animation::AnchorMode::BottomCentered);
+    // m_animation.addFrame(ResourcesManager::instance()->findAtlas("skadi_skill_2_loop_right"));
 
-    m_animation.setLoop("true");
-    m_animation.setInterval(0.03f);
-    m_animation.setAnchorMode(Animation::AnchorMode::BottomCentered);
-    m_animation.addFrame(ResourcesManager::instance()->findAtlas("skadi_skill_2_loop_right"));
+    m_pet.setAnimation("skill_2_loop");
+    m_pet.setGravityEnabled(false);
 
     // 设置帧率为60 FPS
     int fps = 60;
@@ -42,7 +33,8 @@ void Widget::paintEvent(QPaintEvent *event)
     QPainter& painter = Graphics::instance()->getPainter();
     painter.begin(this);
 
-    m_animation.onRender();
+    // m_animation.onRender();
+    m_pet.onRender();
 
     painter.end();
 }
@@ -55,7 +47,8 @@ void Widget::updateGame()
     steady_clock::time_point frameStart = steady_clock::now();
     duration<float> delta = duration<float>(frameStart - m_last_tick);
 
-    m_animation.onUpdate(delta.count());
+    // m_animation.onUpdate(delta.count());
+    m_pet.onUpdate(delta.count());
 
     this->update();
     m_last_tick = frameStart;

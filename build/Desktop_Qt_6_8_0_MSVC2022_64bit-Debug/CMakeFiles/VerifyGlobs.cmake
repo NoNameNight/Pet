@@ -42,6 +42,8 @@ endif()
 # _directory_contents at D:/QT/6.8.0/msvc2022_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "E:/QtProject/Pet/*.cpp")
 set(OLD_GLOB
+  "E:/QtProject/Pet/Character.cpp"
+  "E:/QtProject/Pet/Pet.cpp"
   "E:/QtProject/Pet/ResourcesManager.cpp"
   "E:/QtProject/Pet/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "E:/QtProject/Pet/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Pet_autogen/EWIEGA46WW/moc_widget.cpp"
@@ -69,7 +71,9 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "E:/QtProject/Pet/*.h")
 set(OLD_GLOB
   "E:/QtProject/Pet/Animation.h"
   "E:/QtProject/Pet/Atlas.h"
+  "E:/QtProject/Pet/Character.h"
   "E:/QtProject/Pet/Graphics.h"
+  "E:/QtProject/Pet/Pet.h"
   "E:/QtProject/Pet/ResourcesManager.h"
   "E:/QtProject/Pet/Timer.h"
   "E:/QtProject/Pet/Util.h"
