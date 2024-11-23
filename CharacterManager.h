@@ -3,6 +3,8 @@
 
 #include "Character.h"
 
+
+
 class CharacterManager
 {
 public:
@@ -17,6 +19,7 @@ public:
     void onRender();
 private:
     Character* m_pet = nullptr;
+
 private:
     CharacterManager();
     ~CharacterManager();

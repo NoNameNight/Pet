@@ -1,0 +1,166 @@
+{
+  "width": 300,
+  "height": 241,
+  "resources": {
+    "image": [{ "id": "pic", "path": "resources/pic.png" }],
+    "atlas": [
+      {
+        "id": "skadi_start_right",
+        "path": "resources/skadi/start/char_1012_skadi2_Start_out%04d.png",
+        "num": 22
+      },
+      {
+        "id": "skadi_skill_2_begin_right",
+        "path": "resources/skadi/skill_2_begin/char_1012_skadi2_Skill_2_Begin_out%04d.png",
+        "num": 82
+      },
+      {
+        "id": "skadi_skill_2_loop_right",
+        "path": "resources/skadi/skill_2_loop/char_1012_skadi2_Skill_2_Loop_out%04d.png",
+        "num": 69
+      },
+      {
+        "id": "skadi_fall_right",
+        "path": "resources/skadi/fall/char_1012_skadi2_Fall_out%04d.png",
+        "num": 43
+      },
+      {
+        "id": "skadi_move_right",
+        "path": "resources/skadi/move/build_char_1012_skadi2_Move_out%04d.png",
+        "num": 36
+      },
+      {
+        "id": "skadi_idle_right",
+        "path": "resources/skadi/idle/char_1012_skadi2_Idle_out%04d.png",
+        "num": 178
+      },
+      {
+        "id": "skadi_relax_right",
+        "path": "resources/skadi/relax/build_char_1012_skadi2_Relax_out%04d.png",
+        "num": 98
+      },
+      {
+        "id": "skadi_interact_right",
+        "path": "resources/skadi/interact/build_char_1012_skadi2_Interact_out%04d.png",
+        "num": 50
+      },
+      {
+        "id": "skadi_sit_right",
+        "path": "resources/skadi/sit/build_char_1012_skadi2_Sit_out%04d.png",
+        "num": 110
+      },
+      {
+        "id": "skadi_sleep_right",
+        "path": "resources/skadi/sleep/build_char_1012_skadi2_Sleep_out%04d.png",
+        "num": 56
+      }
+    ],
+    "flipImage": [],
+    "flipAtlas": [
+      { "id": "skadi_start_right", "to": "skadi_start_left" },
+      { "id": "skadi_skill_2_begin_right", "to": "skadi_skill_2_begin_left" },
+      { "id": "skadi_skill_2_loop_right", "to": "skadi_skill_2_loop_left" },
+      { "id": "skadi_fall_right", "to": "skadi_fall_left" },
+      { "id": "skadi_move_right", "to": "skadi_move_left" },
+      { "id": "skadi_idle_right", "to": "skadi_idle_left" },
+      { "id": "skadi_relax_right", "to": "skadi_relax_left" },
+      { "id": "skadi_interact_right", "to": "skadi_interact_left" },
+      { "id": "skadi_sit_right", "to": "skadi_sit_left" },
+      { "id": "skadi_sleep_right", "to": "skadi_sleep_left" }
+    ]
+  },
+  "Pet": {
+    "AnimationGroup": [
+      {
+        "id": "start",
+        "duration": 1.04,
+        "rowInterval": 0.05,
+        "realInterval": 0.03,
+        "isLoop": false,
+        "resourcesLeftId": "skadi_start_left",
+        "resourcesRightId": "skadi_start_right"
+      },
+      {
+        "id": "interact",
+        "duration": 2.4,
+        "rowInterval": 0.05,
+        "realInterval": 0.03,
+        "isLoop": false,
+        "resourcesLeftId": "skadi_interact_left",
+        "resourcesRightId": "skadi_interact_right"
+      },
+      {
+        "id": "skill_2_begin",
+        "duration": 4.0,
+        "rowInterval": 0.05,
+        "realInterval": 0.03,
+        "isLoop": false,
+        "resourcesLeftId": "skadi_skill_2_begin_left",
+        "resourcesRightId": "skadi_skill_2_begin_right"
+      },
+      {
+        "id": "skill_2_loop",
+        "duration": 3.36,
+        "rowInterval": 0.05,
+        "realInterval": 0.03,
+        "isLoop": true,
+        "resourcesLeftId": "skadi_skill_2_loop_left",
+        "resourcesRightId": "skadi_skill_2_loop_right"
+      },
+      {
+        "id": "move",
+        "duration": 1.72,
+        "rowInterval": 0.05,
+        "realInterval": 0.03,
+        "isLoop": true,
+        "resourcesLeftId": "skadi_move_left",
+        "resourcesRightId": "skadi_move_right"
+      },
+      {
+        "id": "fall",
+        "duration": 2.04,
+        "rowInterval": 0.05,
+        "realInterval": 0.03,
+        "isLoop": true,
+        "resourcesLeftId": "skadi_fall_left",
+        "resourcesRightId": "skadi_fall_right"
+      },
+      {
+        "id": "idle",
+        "duration": 8.8,
+        "rowInterval": 0.05,
+        "realInterval": 0.03,
+        "isLoop": true,
+        "resourcesLeftId": "skadi_idle_left",
+        "resourcesRightId": "skadi_idle_right"
+      },
+      {
+        "id": "relax",
+        "duration": 4.84,
+        "rowInterval": 0.05,
+        "realInterval": 0.03,
+        "isLoop": true,
+        "resourcesLeftId": "skadi_relax_left",
+        "resourcesRightId": "skadi_relax_right"
+      },
+      {
+        "id": "sit",
+        "duration": 5.4,
+        "rowInterval": 0.05,
+        "realInterval": 0.03,
+        "isLoop": true,
+        "resourcesLeftId": "skadi_sit_left",
+        "resourcesRightId": "skadi_sit_right"
+      },
+      {
+        "id": "sleep",
+        "duration": 2.72,
+        "rowInterval": 0.05,
+        "realInterval": 0.03,
+        "isLoop": true,
+        "resourcesLeftId": "skadi_sleep_left",
+        "resourcesRightId": "skadi_sleep_right"
+      }
+    ]
+  }
+}

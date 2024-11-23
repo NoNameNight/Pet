@@ -13,6 +13,10 @@ class Character
 public:
     Character();
 
+    const Vector2& getSize() const
+    {
+        return m_size;
+    }
     void setPosition(const Vector2& position)
     {
         m_position = position;
@@ -32,6 +36,15 @@ public:
     Vector2 getLogicCenter() const
     {
         return Vector2(m_position.x, m_position.y - m_logic_height / 2);
+    }
+    void setFacingLeft(bool flag)
+    {
+        m_is_facing_left = flag;
+    }
+
+    bool getFacingLeft() const
+    {
+        return m_is_facing_left;
     }
     void setGravityEnabled(bool flag)
     {
@@ -67,11 +80,12 @@ protected:
         Animation right;
     };
 protected:
-    float FLOOR_Y = 620;                                        //地板竖直方向坐标
-    float BORDER_LEFT_X = 0;                                         //左边界坐标
-    float BORDER_RIGHT_X = 1000;                                      //右边界坐标
-    const float GRAVITY = 98.0 * 2;								//重力大小
+    float FLOOR_Y = 620;                                //地板竖直方向坐标
+    float BORDER_LEFT_X = 0;                            //左边界坐标
+    float BORDER_RIGHT_X = 1000;                        //右边界坐标
+    const float GRAVITY = 98.0 * 2;                     //重力大小
 protected:
+    Vector2 m_size;                                                     //角色图片大小
     Vector2 m_position;													//角色脚底位置
     Vector2 m_velocity;													//角色速度
     float m_logic_height = 0;											//角色逻辑高度

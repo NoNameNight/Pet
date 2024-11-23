@@ -19,11 +19,18 @@ void CharacterManager::onRender()
 
 CharacterManager::CharacterManager()
 {
+
     m_pet = new Pet();
+
 }
 
 CharacterManager::~CharacterManager()
 {
-    delete m_pet;
+    if(!m_pet)
+    {
+        delete m_pet;
+        m_pet = nullptr;
+    }
+
 }
 

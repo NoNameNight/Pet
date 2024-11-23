@@ -19,12 +19,14 @@ public:
         return &config;
     }
 
+
     float character_foot_bottom = 55.f;
     float border_padding = 3.f; // 左右边界收缩
 
     float row_interval = 0.05f; // 原始fps
     float real_interval = 0.03f; // 应用fps
 
+    // 各个动画的播放时长
     float interact_durtion = 2.400000f;
     float relax_durtion = 4.840000f;
     float move_durtion = 1.720000f;

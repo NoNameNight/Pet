@@ -17,6 +17,8 @@ Widget::Widget(QWidget *parent)
     this->setWindowFlags(m_flags | Qt::WindowStaysOnTopHint);
     IMAGE *rtmp = ResourcesManager::instance()->findImage("pic");
     this->resize(rtmp->width(), rtmp->height());
+    qDebug() << rtmp->width() << " " << rtmp->height();
+    // this->resize(300, 241);
 
     // 设置帧率为60 FPS
     int fps = 60;

@@ -94,15 +94,6 @@ build CMakeFiles\Pet.dir\Character.cpp.obj: CXX_COMPILER__Pet_unscanned_Release 
   TARGET_COMPILE_PDB = CMakeFiles\Pet.dir\
   TARGET_PDB = Pet.pdb
 
-build CMakeFiles\Pet.dir\Pet.cpp.obj: CXX_COMPILER__Pet_unscanned_Release E$:\QtProject\Pet\Pet.cpp || cmake_object_order_depends_target_Pet
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -std:c++17 -MD -Zc:__cplusplus -permissive- -utf-8
-  INCLUDES = -IE:\QtProject\Pet\build\Desktop_Qt_6_8_0_MSVC2022_64bit-Release\Pet_autogen\include -external:ID:\QT\6.8.0\msvc2022_64\include\QtCore -external:ID:\QT\6.8.0\msvc2022_64\include -external:ID:\QT\6.8.0\msvc2022_64\mkspecs\win32-msvc -external:ID:\QT\6.8.0\msvc2022_64\include\QtWidgets -external:ID:\QT\6.8.0\msvc2022_64\include\QtGui -external:W0
-  OBJECT_DIR = CMakeFiles\Pet.dir
-  OBJECT_FILE_DIR = CMakeFiles\Pet.dir
-  TARGET_COMPILE_PDB = CMakeFiles\Pet.dir\
-  TARGET_PDB = Pet.pdb
-
 build CMakeFiles\Pet.dir\CharacterManager.cpp.obj: CXX_COMPILER__Pet_unscanned_Release E$:\QtProject\Pet\CharacterManager.cpp || cmake_object_order_depends_target_Pet
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -std:c++17 -MD -Zc:__cplusplus -permissive- -utf-8
@@ -113,6 +104,15 @@ build CMakeFiles\Pet.dir\CharacterManager.cpp.obj: CXX_COMPILER__Pet_unscanned_R
   TARGET_PDB = Pet.pdb
 
 build CMakeFiles\Pet.dir\StateMachine.cpp.obj: CXX_COMPILER__Pet_unscanned_Release E$:\QtProject\Pet\StateMachine.cpp || cmake_object_order_depends_target_Pet
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -std:c++17 -MD -Zc:__cplusplus -permissive- -utf-8
+  INCLUDES = -IE:\QtProject\Pet\build\Desktop_Qt_6_8_0_MSVC2022_64bit-Release\Pet_autogen\include -external:ID:\QT\6.8.0\msvc2022_64\include\QtCore -external:ID:\QT\6.8.0\msvc2022_64\include -external:ID:\QT\6.8.0\msvc2022_64\mkspecs\win32-msvc -external:ID:\QT\6.8.0\msvc2022_64\include\QtWidgets -external:ID:\QT\6.8.0\msvc2022_64\include\QtGui -external:W0
+  OBJECT_DIR = CMakeFiles\Pet.dir
+  OBJECT_FILE_DIR = CMakeFiles\Pet.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Pet.dir\
+  TARGET_PDB = Pet.pdb
+
+build CMakeFiles\Pet.dir\Pet.cpp.obj: CXX_COMPILER__Pet_unscanned_Release E$:\QtProject\Pet\Pet.cpp || cmake_object_order_depends_target_Pet
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -std:c++17 -MD -Zc:__cplusplus -permissive- -utf-8
   INCLUDES = -IE:\QtProject\Pet\build\Desktop_Qt_6_8_0_MSVC2022_64bit-Release\Pet_autogen\include -external:ID:\QT\6.8.0\msvc2022_64\include\QtCore -external:ID:\QT\6.8.0\msvc2022_64\include -external:ID:\QT\6.8.0\msvc2022_64\mkspecs\win32-msvc -external:ID:\QT\6.8.0\msvc2022_64\include\QtWidgets -external:ID:\QT\6.8.0\msvc2022_64\include\QtGui -external:W0
@@ -138,7 +138,7 @@ build CMakeFiles\Pet.dir\PetStateNodes.cpp.obj: CXX_COMPILER__Pet_unscanned_Rele
 #############################################
 # Link the executable Pet.exe
 
-build Pet.exe: CXX_EXECUTABLE_LINKER__Pet_Release CMakeFiles\Pet.dir\Pet_autogen\mocs_compilation.cpp.obj CMakeFiles\Pet.dir\main.cpp.obj CMakeFiles\Pet.dir\widget.cpp.obj CMakeFiles\Pet.dir\ResourcesManager.cpp.obj CMakeFiles\Pet.dir\Character.cpp.obj CMakeFiles\Pet.dir\Pet.cpp.obj CMakeFiles\Pet.dir\CharacterManager.cpp.obj CMakeFiles\Pet.dir\StateMachine.cpp.obj CMakeFiles\Pet.dir\PetStateNodes.cpp.obj | D$:\QT\6.8.0\msvc2022_64\lib\Qt6Widgets.lib D$:\QT\6.8.0\msvc2022_64\lib\Qt6Gui.lib D$:\QT\6.8.0\msvc2022_64\lib\Qt6Core.lib D$:\QT\6.8.0\msvc2022_64\lib\Qt6EntryPoint.lib || Pet_autogen Pet_autogen_timestamp_deps
+build Pet.exe: CXX_EXECUTABLE_LINKER__Pet_Release CMakeFiles\Pet.dir\Pet_autogen\mocs_compilation.cpp.obj CMakeFiles\Pet.dir\main.cpp.obj CMakeFiles\Pet.dir\widget.cpp.obj CMakeFiles\Pet.dir\ResourcesManager.cpp.obj CMakeFiles\Pet.dir\Character.cpp.obj CMakeFiles\Pet.dir\CharacterManager.cpp.obj CMakeFiles\Pet.dir\StateMachine.cpp.obj CMakeFiles\Pet.dir\Pet.cpp.obj CMakeFiles\Pet.dir\PetStateNodes.cpp.obj | D$:\QT\6.8.0\msvc2022_64\lib\Qt6Widgets.lib D$:\QT\6.8.0\msvc2022_64\lib\Qt6Gui.lib D$:\QT\6.8.0\msvc2022_64\lib\Qt6Core.lib D$:\QT\6.8.0\msvc2022_64\lib\Qt6EntryPoint.lib || Pet_autogen Pet_autogen_timestamp_deps
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD
   LINK_FLAGS = /machine:x64 /INCREMENTAL:NO /subsystem:windows
   LINK_LIBRARIES = D:\QT\6.8.0\msvc2022_64\lib\Qt6Widgets.lib  D:\QT\6.8.0\msvc2022_64\lib\Qt6Gui.lib  D:\QT\6.8.0\msvc2022_64\lib\Qt6Core.lib  mpr.lib  userenv.lib  D:\QT\6.8.0\msvc2022_64\lib\Qt6EntryPoint.lib  shell32.lib  d3d11.lib  dxgi.lib  dxguid.lib  d3d12.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

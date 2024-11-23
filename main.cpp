@@ -13,6 +13,17 @@
 #include <QSystemTrayIcon>
 #include <QIcon>
 
+#include <QLibrary>
+
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QJsonArray>
+#include <QJsonValue>
+#include <QFile>
+
+// #include "Util.h"
+
+/////////////////////////////////////////////////////////////////////////////////
 void initMenu(QMenu& menu)
 {
     QAction* move_act = menu.addAction("move");
@@ -133,6 +144,7 @@ int main(int argc, char *argv[])
     {
         return -1;
     }
+
 
     try
     {
